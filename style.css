@@ -164,11 +164,17 @@ button {
     display: flex;
     padding-top: 98px;
     padding-bottom: 100px;
-    justify-content: space-between;
+}
+
+.news-column:not(:last-child) {
+    margin-right: 20px;
 }
 
 .news-banner {
     position: relative;
+}
+
+.news-banner:not(:last-child) {
     margin-bottom: 17px;
 }
 
@@ -213,7 +219,6 @@ button {
 
 .items-row {
     display: flex;
-    justify-content: space-between;
 }
 
 .items-row:not(:last-child) {
@@ -222,6 +227,10 @@ button {
 
 .items-card {
     position: relative;
+}
+
+.items-card:not(:last-child) {
+    margin-right: 30px;
 }
 
 .items-card:hover {
