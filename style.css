@@ -305,3 +305,41 @@ button {
 .scroll-items>img {
     margin-left: 9px;
 }
+
+.info {
+    display: flex;
+}
+
+.info-ad {
+    padding: 146px 0px 298px 39px;
+    background: url(img/offer.png) no-repeat;
+    flex-grow: 1;
+}
+
+.info-ad>h2 {
+    font-size: 53.5px;
+    letter-spacing: 1.34px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.info-ad>span {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+}
+
+.info-list {
+    background-color: #222224;
+    width: 33%;
+}
+
+.info-items {
+    display: flex;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
