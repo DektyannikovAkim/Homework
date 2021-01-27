@@ -10,6 +10,8 @@ body {
 
 button {
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .container {
@@ -27,7 +29,7 @@ button {
     padding: 25px 0px 22px 0px;
 }
 
-.header-medium>a {
+.logo {
     display: flex;
     align-items: center;
     font-size: 27px;
@@ -36,7 +38,7 @@ button {
     color: #222222;
 }
 
-.header-medium>a>img {
+.logo-img {
     margin-right: 12px;
 }
 
@@ -53,11 +55,6 @@ button {
     border: solid 1px #e6e6e6;
     font-size: 14px;
     height: 38px;
-}
-
-button {
-    border: none;
-    outline: none;
 }
 
 .browse {
@@ -310,11 +307,12 @@ button {
 
 .info {
     display: flex;
+    background: url(img/offer.png) no-repeat;
+    height: 529px;
 }
 
 .info-ad {
     padding: 146px 0px 298px 39px;
-    background: url(img/offer.png) no-repeat;
     flex-grow: 1;
 }
 
@@ -339,6 +337,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
 }
 
 .info-items {
@@ -372,7 +371,6 @@ button {
 
 .reviews {
     background: url(img/surfer.png) no-repeat;
-    padding: 111px 0px 156px 0px;
     margin-top: 97px;
 }
 
@@ -384,6 +382,8 @@ button {
     width: 50%;
     display: flex;
     align-items: flex-start;
+    padding: 111px 0px 156px 0px;
+    border-right: solid 1px #e3e3e3;
 }
 
 .reviews-items>img {
@@ -394,7 +394,7 @@ button {
     display: flex;
     flex-direction: column;
     padding-top: 12px;
-    padding-right: 86px;
+    padding-right: 73px;
 }
 
 .reviews-text>p {
@@ -414,10 +414,6 @@ button {
 .autor-small-text {
     font-size: 12px;
     letter-spacing: 0.3px;
-}
-
-.subscription {
-    width: 50%;
 }
 
 .scroll-reviews {
@@ -440,4 +436,163 @@ button {
 
 .active {
     background-color: #f16d7f;
+}
+
+.subscription {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 37px;
+    text-align: center;
+    padding: 148px 0px 152px 0px;
+}
+
+.sub-heading {
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.sub-small-text {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    margin-bottom: 33px;
+}
+
+.sub-form {
+    display: flex;
+    justify-content: center;
+    height: 46px;
+}
+
+.sub-form>input {
+    border-radius: 23px 0px 0px 23px;
+    background-color: #e1e1e1;
+    padding-left: 28px;
+    outline: none;
+    border: none;
+    width: 334px;
+}
+
+.sub-form>button {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0px 20px;
+    background-color: #f16d7f;
+    border-radius: 0px 23px 23px 0px;
+}
+
+.general-info {
+    padding: 109px 0px 89px 0px;
+    display: flex
+}
+
+.brand-info {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    margin-right: 64px;
+}
+
+.brand-info>p {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.35px;
+    color: #898989;
+    padding-top: 29px;
+    line-height: 1.71;
+}
+
+.navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-top: 11px;
+}
+
+.nav-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-info>span {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.45px;
+    text-transform: uppercase;
+    color: #f16d7f;
+    margin-bottom: 45px;
+}
+
+.nav-info>a {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: #898989;
+    text-decoration: none;
+}
+
+.nav-info>a:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+footer {
+    background-color: #e6e6e6;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px 33px 0px;
+    align-items: center;
+}
+
+.copyright>span {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: #7a7a7a;
+}
+
+.links {
+    display: flex;
+}
+
+.links-item {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.links-item:not(:last-child) {
+    margin-right: 7px;
+}
+
+.fs {
+    background: url('img/facebook.png') no-repeat;
+    background-position: center center;
+    background-color: #ffffff;
+}
+
+.tw {
+    background: url('img/twitter.png') no-repeat;
+    background-position: center center;
+    background-color: #f16d7f;
+}
+
+.in {
+    background: url('img/in.png') no-repeat;
+    background-position: center center;
+    background-color: #eeeeee;
+}
+
+.pntrs {
+    background: url('img/pinterest.png') no-repeat;
+    background-position: center center;
+    background-color: #ffffff;
+}
+
+.gl {
+    background: url('img/google.png') no-repeat;
+    background-position: center center;
+    background-color: #ffffff;
 }
