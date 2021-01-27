@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
 }
 
 button {
@@ -333,13 +335,109 @@ button {
 .info-list {
     background-color: #222224;
     width: 33%;
+    padding: 48px 43px 66px 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .info-items {
     display: flex;
 }
 
+.info-img {
+    margin-right: 30px;
+}
+
 .info-text {
     display: flex;
     flex-direction: column;
+    padding-top: 6px;
+}
+
+.info-heading {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #fbfbfb;
+    margin-bottom: 17px;
+}
+
+.info-small-text {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 1.71;
+    color: #fbfbfb;
+}
+
+.reviews {
+    background: url(img/surfer.png) no-repeat;
+    padding: 111px 0px 156px 0px;
+    margin-top: 97px;
+}
+
+.reviews-content {
+    display: flex;
+}
+
+.reviews-items {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.reviews-items>img {
+    margin-right: 28px;
+}
+
+.reviews-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    padding-right: 86px;
+}
+
+.reviews-text>p {
+    margin-bottom: 19px;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    color: #222224;
+}
+
+.reviews-text>.red {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+
+.autor-small-text {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+
+.subscription {
+    width: 50%;
+}
+
+.scroll-reviews {
+    margin-top: 29px;
+}
+
+.scroll-button {
+    width: 38px;
+    height: 4px;
+    background-color: #d6d6d6;
+}
+
+.scroll-button:not(:last-child) {
+    margin-right: 13px;
+}
+
+.scroll-button:hover {
+    background-color: #f16d7f;
+}
+
+.active {
+    background-color: #f16d7f;
 }
