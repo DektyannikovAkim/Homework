@@ -117,7 +117,15 @@ button {
 }
 
 .menu-list:not(:last-of-type) {
-    padding-right: 45px;
+    padding-right: 22.5px;
+}
+
+.menu-list:not(:first-of-type) {
+    padding-left: 22.5px;
+}
+
+.active-link {
+    border-bottom: solid 3px #ef5b70;
 }
 
 .banner {
@@ -227,6 +235,10 @@ button {
     margin-left: -15px;
     margin-right: -15px;
     justify-content: center;
+}
+
+.items-container-for-product {
+    justify-content: end;
 }
 
 .items-card {
@@ -340,6 +352,22 @@ button {
     overflow: auto;
 }
 
+.info-list-for__product {
+    width: 100%;
+    padding: 89px 220px 115px 220px;
+    flex-direction: inherit;
+}
+
+.info-items-for__product {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-items-for__product:not(:last-child) {
+    margin-right: 55px;
+}
+
 .info-items {
     display: flex;
 }
@@ -348,10 +376,19 @@ button {
     margin-right: 30px;
 }
 
+.info-img-for__product {
+    margin-right: 0px;
+}
+
 .info-text {
     display: flex;
     flex-direction: column;
     padding-top: 6px;
+}
+
+.info-text-for__product {
+    padding-top: 6px;
+    align-items: center;
 }
 
 .info-heading {
@@ -594,5 +631,222 @@ footer {
 .gl {
     background: url('img/google.png') no-repeat;
     background-position: center center;
+    background-color: #ffffff;
+}
+
+.new-arrivals {
+    background-color: #f8f3f4;
+}
+
+.new-arrivals-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 0px;
+}
+
+.new-arrivals-heading {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f16d7f;
+}
+
+.bread-crumbs {
+    display: flex;
+    align-items: baseline;
+}
+
+.new-arrivals-text {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #636363;
+}
+
+.end-link {
+    font-weight: bold;
+    color: #f16d7f;
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.featured:not(:last-child) {
+    margin-bottom: 2px;
+}
+
+.featured-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 32px;
+}
+
+.gds {
+    display: flex;
+    padding-top: 59px;
+}
+
+.scroll-bar {
+    display: flex;
+    margin-bottom: 34px;
+    overflow: auto;
+}
+
+.scroll-bar>img:not(:last-child) {
+    margin-right: 1px;
+}
+
+.active-category {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.hide+label~.hide-info {
+    display: none;
+}
+
+
+/*!!!убрать бордер лефт и сделать часть рамки через псевдокласс бефор (в углах получается склейка не по дизайну)*/
+
+.hide+label {
+    font-size: 14px;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    width: 243px;
+    align-items: center;
+    padding: 12px 0px 15px 11px;
+    border-left: solid 5px #ef5b70;
+    border-bottom: solid 1px #ebebeb;
+}
+
+.hide+label>img {
+    position: absolute;
+    right: 5px;
+}
+
+.hide:checked+label .active-category {
+    display: inline-block;
+}
+
+.hide:checked+label .no-active {
+    display: none;
+}
+
+.hide:checked+label+.hide-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-items {
+    text-decoration: none;
+    color: #6f6e6e;
+    line-height: 2.36;
+    font-size: 14px;
+}
+
+.search-results {
+    padding-left: 40px;
+}
+
+.filter {
+    display: flex;
+    margin-bottom: 41px;
+    justify-content: space-between;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending>span {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6f6e6e;
+}
+
+
+/* попробовать сделать элементы трендов с разделителем через before + not first childe и ограничить количество элементов за счет добавления строк*/
+
+.trending-items {
+    display: flex;
+    align-items: center;
+    max-width: 202px;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.trending-items>label {
+    cursor: pointer;
+    font-size: 14px;
+    color: #6f6e6e;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.trending-check {
+    display: none;
+}
+
+.trending-check:checked+label {
+    color: #272727;
+    border-bottom: solid 1px #6f6e6e;
+}
+
+.delimiter {
+    height: 13px;
+    width: 0px;
+    background-color: #e8e8e8;
+    border: solid 1px #e8e8e8;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    max-width: 236px;
+}
+
+.size-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.size-check {
+    display: none;
+}
+
+.check-wnd {
+    margin-right: 9px;
+}
+
+.size-check+label {
+    display: flex;
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #6f6e6e;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+.check-wnd {
+    width: 13px;
+    height: 13px;
+    border: solid 1px #ebebeb;
     background-color: #ffffff;
 }
