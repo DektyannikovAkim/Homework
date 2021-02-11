@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <!--   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">-->
 
     <title>MAN</title>
@@ -16,20 +16,21 @@
 <body>
     <header class="header-border">
         <div class="header-medium container">
-            <a href="index.html" class="logo"><img src="img/logo.png" alt="logo" class="logo-img"> <span class="logo-text">BRAN<span class="red">D</span></span>
-            </a>
             <div class="header-content">
+                <a href="#" class="logo"><img src="img/logo.png" alt="logo" class="logo-img"> <span class="logo-text">BRAN<span class="red">D</span></span>
+                </a>
+
                 <form action="" class="search">
                     <button class="browse">Browse<img class="arrow" src="img/arrow-down.png" alt="arrow"></button>
                     <input type="text" placeholder="Search for Item..." class="sch-item">
                     <button class="search-button"><img src="img/search.png" alt="search"></button>
                 </form>
-
-                <div class="profile">
-                    <a href="#" class="cart"><img src="img/cart.png" alt="cart"></a>
-                    <button class="acc">My Account<img class="arrow" src="img/arrow-down-white.png" alt="arrow"></button>
-                </div>
             </div>
+            <div class="profile">
+                <a href="#" class="cart"><img src="img/cart.png" alt="cart"></a>
+                <button class="acc">My Account<img class="arrow" src="img/arrow-down-white.png" alt="arrow"></button>
+            </div>
+
         </div>
     </header>
     <nav class="menu">
@@ -42,7 +43,7 @@
         <a href="" class="menu-list">Hot&nbspDeals</a>
     </nav>
 
-    <div class="new-arrivals">
+    <section class="new-arrivals">
         <div class="new-arrivals-content container">
             <h3 class="new-arrivals-heading">New Arrivals </h3>
             <div class="bread-crumbs">
@@ -53,10 +54,10 @@
                 <span class="new-arrivals-text end-link">New Arrivals</span>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="gds container">
+    <section class="gds container">
         <div class="item-category">
             <div class="featured">
                 <input type="checkbox" id="hd-1" class="hide">
@@ -122,7 +123,7 @@
                 </nav>
             </div>
         </div>
-        <div class="search-results">
+        <section class="search-results">
             <div class="filter">
                 <div class="trending">
                     <span>Trending now</span>
@@ -175,112 +176,160 @@
                         <label for="size-chk-7"><div class="check-wnd"></div>xxl</label>
                     </div>
                 </div>
-                <div class="price">
+                <div class="price_filter">
                     <span>pRICE</span>
+                    <div class="price_diapazon">
+                        <div class="circle left"></div>
+                        <div class="strip"></div>
+                        <div class="circle right"></div>
+                    </div>
+
+                    <div class="price_value">
+                        <span>$52</span>
+                        <span>$400</span>
+                    </div>
                 </div>
             </div>
             <div class="sorting">
-
-            </div>
-            <div class="fetured-items">
-                <div class="items-container items-container-for-product">
-                    <figure class="items-card">
-                        <div class="items-hover-buy">
-                            <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
-                        </div>
-                        <img src="img/product-9.png" alt="product-9">
-                        <figcaption class="items-info">
-                            <span class="items-text">Mango  People  T-shirt</span>
-                            <span class="price red">$52.00</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="items-card">
-                        <div class="items-hover-buy">
-                            <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
-                        </div>
-                        <img src="img/product-10.png" alt="product-10">
-                        <figcaption class="items-info">
-                            <span class="items-text">Mango  People  T-shirt</span>
-                            <span class="price red">$52.00</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="items-card">
-                        <div class="items-hover-buy">
-                            <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
-                        </div>
-                        <img src="img/product-3.png" alt="product-3">
-                        <figcaption class="items-info">
-                            <span class="items-text">Mango  People  T-shirt</span>
-                            <span class="price red">$52.00</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="items-card">
-                        <div class="items-hover-buy">
-                            <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
-                        </div>
-                        <img src="img/product-11.png" alt="product-11">
-                        <figcaption class="items-info">
-                            <span class="items-text">Mango  People  T-shirt</span>
-                            <span class="price red">$52.00</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="items-card">
-                        <div class="items-hover-buy">
-                            <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
-                        </div>
-                        <img src="img/product-8.png" alt="product-8">
-                        <figcaption class="items-info">
-                            <span class="items-text">Mango  People  T-shirt</span>
-                            <span class="price red">$52.00</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="items-card">
-                        <div class="items-hover-buy">
-                            <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
-                        </div>
-                        <img src="img/product-12.png" alt="product-12">
-                        <figcaption class="items-info">
-                            <span class="items-text">Mango  People  T-shirt</span>
-                            <span class="price red">$52.00</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="items-card">
-                        <div class="items-hover-buy">
-                            <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
-                        </div>
-                        <img src="img/product-6.png" alt="product-6">
-                        <figcaption class="items-info">
-                            <span class="items-text">Mango  People  T-shirt</span>
-                            <span class="price red">$52.00</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="items-card">
-                        <div class="items-hover-buy">
-                            <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
-                        </div>
-                        <img src="img/product-13.png" alt="product-13">
-                        <figcaption class="items-info">
-                            <span class="items-text">Mango  People  T-shirt</span>
-                            <span class="price red">$52.00</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="items-card">
-                        <div class="items-hover-buy">
-                            <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
-                        </div>
-                        <img src="img/product-14.png" alt="product-14">
-                        <figcaption class="items-info">
-                            <span class="items-text">Mango  People  T-shirt</span>
-                            <span class="price red">$52.00</span>
-                        </figcaption>
-                    </figure>
+                <div class="sort_by">
+                    <div class="sort_by-text">
+                        <span>Sort By</span>
+                    </div>
+                    <select class="sort_by-select">
+                        <option>Name</option>
+                        <option>Name</option>
+                        <option>Name</option>
+                    </select>
                 </div>
-                <button class="scroll-items">Browse All Product <img src="img/arrow-right.png" alt="arrow-right"></button>
-            </div>
-        </div>
-    </div>
 
-    <div class="info-list info-list-for__product">
+                <div class="show">
+                    <div class="show-text">
+                        <span>Show</span>
+                    </div>
+                    <select class="show-select">
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="items-container">
+                <figure class="items-card">
+                    <div class="items-hover-buy">
+                        <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
+                    </div>
+                    <img src="img/product-9.png" alt="product-9">
+                    <figcaption class="items-info">
+                        <span class="items-text">Mango  People  T-shirt</span>
+                        <span class="price red">$52.00</span>
+                    </figcaption>
+                </figure>
+                <figure class="items-card">
+                    <div class="items-hover-buy">
+                        <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
+                    </div>
+                    <img src="img/product-10.png" alt="product-10">
+                    <figcaption class="items-info">
+                        <span class="items-text">Mango  People  T-shirt</span>
+                        <span class="price red">$52.00</span>
+                    </figcaption>
+                </figure>
+                <figure class="items-card">
+                    <div class="items-hover-buy">
+                        <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
+                    </div>
+                    <img src="img/product-3.png" alt="product-3">
+                    <figcaption class="items-info">
+                        <span class="items-text">Mango  People  T-shirt</span>
+                        <span class="price red">$52.00</span>
+                    </figcaption>
+                </figure>
+                <figure class="items-card">
+                    <div class="items-hover-buy">
+                        <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
+                    </div>
+                    <img src="img/product-11.png" alt="product-11">
+                    <figcaption class="items-info">
+                        <span class="items-text">Mango  People  T-shirt</span>
+                        <span class="price red">$52.00</span>
+                    </figcaption>
+                </figure>
+                <figure class="items-card">
+                    <div class="items-hover-buy">
+                        <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
+                    </div>
+                    <img src="img/product-8.png" alt="product-8">
+                    <figcaption class="items-info">
+                        <span class="items-text">Mango  People  T-shirt</span>
+                        <span class="price red">$52.00</span>
+                    </figcaption>
+                </figure>
+                <figure class="items-card">
+                    <div class="items-hover-buy">
+                        <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
+                    </div>
+                    <img src="img/product-12.png" alt="product-12">
+                    <figcaption class="items-info">
+                        <span class="items-text">Mango  People  T-shirt</span>
+                        <span class="price red">$52.00</span>
+                    </figcaption>
+                </figure>
+                <figure class="items-card">
+                    <div class="items-hover-buy">
+                        <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
+                    </div>
+                    <img src="img/product-6.png" alt="product-6">
+                    <figcaption class="items-info">
+                        <span class="items-text">Mango  People  T-shirt</span>
+                        <span class="price red">$52.00</span>
+                    </figcaption>
+                </figure>
+                <figure class="items-card">
+                    <div class="items-hover-buy">
+                        <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
+                    </div>
+                    <img src="img/product-13.png" alt="product-13">
+                    <figcaption class="items-info">
+                        <span class="items-text">Mango  People  T-shirt</span>
+                        <span class="price red">$52.00</span>
+                    </figcaption>
+                </figure>
+                <figure class="items-card">
+                    <div class="items-hover-buy">
+                        <button class="buy-item"><img src="img/cart-white.png" alt="cart-white">Add to Cart</button>
+                    </div>
+                    <img src="img/product-14.png" alt="product-14">
+                    <figcaption class="items-info">
+                        <span class="items-text">Mango  People  T-shirt</span>
+                        <span class="price red">$52.00</span>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="items-card-scroll">
+                <div class="page-scroll">
+                    <button class="page-scroll-left"><img src="img/arrow-left.png" alt="arrow-left"></button>
+                    <nav class="page-scroll-list">
+                        <a href="" class="page-scroll-link active-page-scroll">1</a>
+                        <a href="" class="page-scroll-link">2</a>
+                        <a href="" class="page-scroll-link">3</a>
+                        <a href="" class="page-scroll-link">4</a>
+                        <a href="" class="page-scroll-link">5</a>
+                        <a href="" class="page-scroll-link">6</a>
+                        <div class="delimiter-page-scroll"><span>.....</span>
+                        </div>
+                        <a href="" class="page-scroll-link">20</a>
+                    </nav>
+                    <button class="page-scroll-right"><img src="img/arrow-right-active.png" alt="arrow-right-active"></button>
+                </div>
+                <button class="view_all">View All</button>
+            </div>
+
+        </section>
+    </section>
+
+    <section class="info-list info-list-for__product">
         <div class="info-items info-items-for__product">
             <div class="info-img"><img src="img/delivery.png" alt="delivery"></div>
             <div class="info-text info-text-for__product">
@@ -302,9 +351,9 @@
                 <span class="info-small-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</span>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="reviews">
+    <section class="reviews">
         <div class="reviews-content container">
             <figure class="reviews-items">
                 <img src="img/face.png" alt="face">
@@ -328,60 +377,63 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="general-info container">
-        <div class="brand-info">
-            <a href="#" class="logo"><img src="img/logo.png" alt="logo" class="logo-img"> <span class="logo-text">BRAN<span class="red">D</span></span>
-            </a>
-            <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
-            </p>
-            <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
-                <!--  Objectively strategize seamless relationships via resource sucking testing
+    <footer>
+        <section class="general-info container">
+            <div class="brand-info">
+                <a href="#" class="logo"><img src="img/logo.png" alt="logo" class="logo-img"> <span class="logo-text">BRAN<span class="red">D</span></span>
+                </a>
+                <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                </p>
+                <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                    <!--  Objectively strategize seamless relationships via resource sucking testing
                     procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous
                     opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy. Compellingly envisioneer corporate methods of empowerment before standards compliant technologies. Objectively facilitate progressive. -->
-            </p>
-        </div>
-        <div class="navigation">
-            <nav class="nav-info">
-                <span>company</span>
-                <a href="#">Home </a>
-                <a href="#">Shop</a>
-                <a href="#">About</a>
-                <a href="#">How It Works</a>
-                <a href="#">Contact</a>
-            </nav>
-            <nav class="nav-info">
-                <span>information</span>
-                <a href="#">Tearms & Condition</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">How to Buy</a>
-                <a href="#">How to Sell</a>
-                <a href="#">Promotion</a>
-            </nav>
-            <nav class="nav-info">
-                <span>shop category</span>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Child</a>
-                <a href="#">Apparel</a>
-                <a href="#">Brows All</a>
-            </nav>
-        </div>
+                </p>
+            </div>
+            <div class="navigation">
+                <nav class="nav-info">
+                    <span>company</span>
+                    <a href="#">Home </a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <nav class="nav-info">
+                    <span>information</span>
+                    <a href="#">Tearms & Condition</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">How to Buy</a>
+                    <a href="#">How to Sell</a>
+                    <a href="#">Promotion</a>
+                </nav>
+                <nav class="nav-info">
+                    <span>shop category</span>
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Child</a>
+                    <a href="#">Apparel</a>
+                    <a href="#">Brows All</a>
+                </nav>
+            </div>
+        </section>
 
-    </div>
-    <footer>
-        <div class="copyright container">
-            <span>© 2017  Brand  All Rights Reserved.</span>
-            <nav class="links">
-                <a href="#" class="links-item fs"></a>
-                <a href="#" class="links-item tw"></a>
-                <a href="#" class="links-item in"></a>
-                <a href="#" class="links-item pntrs"></a>
-                <a href="#" class="links-item gl"></a>
-            </nav>
-        </div>
+
+        <section class="copyright">
+            <div class="copyright-content container">
+                <span>© 2017  Brand  All Rights Reserved.</span>
+                <nav class="links">
+                    <a href="#" class="links-item fs"></a>
+                    <a href="#" class="links-item tw"></a>
+                    <a href="#" class="links-item in"></a>
+                    <a href="#" class="links-item pntrs"></a>
+                    <a href="#" class="links-item gl"></a>
+                </nav>
+            </div>
+        </section>
     </footer>
 </body>
 

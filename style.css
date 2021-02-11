@@ -14,6 +14,12 @@ button {
     outline: none;
 }
 
+input,
+select {
+    outline: none;
+    cursor: pointer;
+}
+
 .container {
     max-width: 1142px;
     margin: auto;
@@ -27,6 +33,7 @@ button {
     display: flex;
     align-items: center;
     padding: 25px 0px 22px 0px;
+    justify-content: space-between;
 }
 
 .logo {
@@ -44,10 +51,7 @@ button {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
     align-items: center;
-    padding-left: 37px;
 }
 
 .search {
@@ -55,6 +59,7 @@ button {
     border: solid 1px #e6e6e6;
     font-size: 14px;
     height: 38px;
+    margin-left: 46px;
 }
 
 .browse {
@@ -230,22 +235,16 @@ button {
 }
 
 .items-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 263px);
+    grid-column-gap: 30px;
+    grid-row-gap: 38px;
     justify-content: center;
-}
-
-.items-container-for-product {
-    justify-content: end;
+    margin-bottom: 38px;
 }
 
 .items-card {
     position: relative;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 39px;
 }
 
 .items-card:hover {
@@ -324,7 +323,7 @@ button {
 }
 
 .info-ad {
-    padding: 146px 0px 298px 39px;
+    padding: 146px 0px 0px 39px;
     flex-grow: 1;
 }
 
@@ -409,6 +408,7 @@ button {
 .reviews {
     background: url(img/surfer.png) no-repeat;
     margin-top: 97px;
+    background-size: cover
 }
 
 .reviews-content {
@@ -573,18 +573,18 @@ button {
     margin-bottom: 24px;
 }
 
-footer {
+.copyright {
     background-color: #e6e6e6;
 }
 
-.copyright {
+.copyright-content {
     display: flex;
     justify-content: space-between;
     padding: 32px 0px 33px 0px;
     align-items: center;
 }
 
-.copyright>span {
+.copyright-content>span {
     font-size: 16px;
     letter-spacing: 0.4px;
     color: #7a7a7a;
@@ -714,8 +714,16 @@ footer {
     display: none;
 }
 
-
-/*!!!убрать бордер лефт и сделать часть рамки через псевдокласс бефор (в углах получается склейка не по дизайну)*/
+.hide+label::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 5px;
+    background-color: #ef5b70;
+    left: 0px;
+    top: 0px;
+    bottom: -1px;
+}
 
 .hide+label {
     font-size: 14px;
@@ -727,7 +735,6 @@ footer {
     width: 243px;
     align-items: center;
     padding: 12px 0px 15px 11px;
-    border-left: solid 5px #ef5b70;
     border-bottom: solid 1px #ebebeb;
 }
 
@@ -758,17 +765,20 @@ footer {
 
 .search-results {
     padding-left: 40px;
+    padding-bottom: 110px;
 }
 
 .filter {
     display: flex;
     margin-bottom: 41px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .trending {
     display: flex;
     flex-direction: column;
+    margin-right: 114px;
 }
 
 .trending>span {
@@ -778,9 +788,6 @@ footer {
     text-transform: uppercase;
     color: #6f6e6e;
 }
-
-
-/* попробовать сделать элементы трендов с разделителем через before + not first childe и ограничить количество элементов за счет добавления строк*/
 
 .trending-items {
     display: flex;
@@ -805,7 +812,6 @@ footer {
 
 .trending-check:checked+label {
     color: #272727;
-    border-bottom: solid 1px #6f6e6e;
 }
 
 .delimiter {
@@ -816,22 +822,27 @@ footer {
 }
 
 .size {
-    display: flex;
-    flex-direction: column;
-    max-width: 236px;
+    width: 240px;
+    margin-right: 55px;
+}
+
+.size>span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6f6e6e;
+    text-transform: uppercase;
 }
 
 .size-items {
-    display: flex;
-    flex-wrap: wrap;
+    padding-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50px);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
 }
 
 .size-check {
     display: none;
-}
-
-.check-wnd {
-    margin-right: 9px;
 }
 
 .size-check+label {
@@ -849,4 +860,189 @@ footer {
     height: 13px;
     border: solid 1px #ebebeb;
     background-color: #ffffff;
+    margin-right: 9px;
+}
+
+.size-check:checked+label>.check-wnd {
+    background: url('img/checkmark-outline.svg') no-repeat;
+    background-position: center center;
+}
+
+.price_filter>span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6f6e6e;
+    text-transform: uppercase;
+}
+
+.price_diapazon {
+    position: relative;
+    width: 262px;
+    height: 6px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    margin-top: 24px;
+    margin-bottom: 21px;
+}
+
+.circle {
+    position: absolute;
+    top: -4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background-color: #f16d7f;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.left {
+    left: 23px;
+}
+
+.strip {
+    position: absolute;
+    width: 124px;
+    height: 6px;
+    left: 31px;
+    background-color: #f16d7f;
+}
+
+.right {
+    right: 101px;
+}
+
+.price_value {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_value>span {
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #6f6e6e;
+}
+
+.sorting {
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 9px;
+    margin-bottom: 48px;
+}
+
+.sort_by {
+    display: flex;
+    font-size: 14px;
+    color: #6f6e6e;
+    background-color: #ffffff;
+    border: solid 1px #ebebeb;
+}
+
+.sort_by-text {
+    padding: 9px 8px 7px 13px;
+    border-right: solid 1px #ebebeb;
+}
+
+.sort_by-select {
+    font-family: Lato;
+    width: 86px;
+    font-size: 14px;
+    color: #6f6e6e;
+    border: none;
+    padding: 0px 9px 0px 11px;
+    appearance: none;
+    background: url('img/arrow-down.png') no-repeat right;
+    background-position-x: calc(100% - 9px);
+}
+
+.show {
+    display: flex;
+    font-size: 14px;
+    color: #6f6e6e;
+    background-color: #ffffff;
+    border: solid 1px #ebebeb;
+    margin-left: 10px;
+}
+
+.show-text {
+    padding: 9px 9px 7px 12px;
+    border-right: solid 1px #ebebeb;
+}
+
+.show-select {
+    font-family: Lato;
+    width: 63px;
+    font-size: 14px;
+    color: #6f6e6e;
+    border: none;
+    padding: 0px 8px 0px 12px;
+    appearance: none;
+    background: url('img/arrow-down.png') no-repeat right;
+    background-position-x: calc(100% - 8px);
+}
+
+.items-card-scroll {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-scroll {
+    display: flex;
+    justify-content: center;
+    width: 261px;
+    padding: 16px 15px 15px;
+    border-radius: 3px;
+    border: solid 1px #ebebeb;
+    background-color: #ffffff;
+}
+
+.page-scroll-left {
+    background-color: #ffffff;
+    margin-right: 8px;
+}
+
+.page-scroll-list {
+    display: flex;
+    justify-content: center;
+}
+
+.page-scroll-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: #c4c4c4;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.delimiter-page-scroll {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.page-scroll-right {
+    background-color: #ffffff;
+    margin-left: 8px;
+}
+
+.page-scroll-right>img,
+.page-scroll-left>img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.active-page-scroll {
+    color: #ef5b70;
+    ;
+}
+
+.view_all {
+    padding: 16px 45px 15px 47px;
+    border-radius: 3px;
+    border: solid 1px #ef5b70;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ef5b70;
 }
