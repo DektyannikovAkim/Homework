@@ -1086,6 +1086,26 @@ select {
     border-bottom: 1px solid #e8e8e8;
 }
 
+.checkout-information>input[type=checkbox]+label {
+    padding: 28px 0px 26px 0px;
+    cursor: pointer;
+}
+
+.checkout-information>input[type=checkbox] {
+    display: none;
+}
+
+.checkout-information>input[type=checkbox]:checked+label+.checkout-items {
+    display: flex;
+    max-width: 939px;
+    justify-content: space-between;
+    padding-bottom: 53px;
+}
+
+.checkout-items {
+    display: none;
+}
+
 .register {
     display: flex;
     flex-direction: column;
@@ -1100,7 +1120,7 @@ select {
 }
 
 .register-small-text {
-    font-size: 12px;
+    font-size: 13px;
     color: #b3b2b2;
     text-transform: none;
 }
@@ -1112,37 +1132,51 @@ select {
     margin-top: 30px;
 }
 
-.register-radio input[type=radio] {
+.radio-items {
+    display: flex;
+    align-items: center;
+}
+
+.radio-items:last-of-type {
+    margin-top: 16px;
+}
+
+.radio-check {
+    width: 14px;
+    height: 14px;
+    border: solid 2px #555555;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 15px;
+}
+
+.radio-check-small {
+    display: none;
+    width: 6px;
+    height: 6px;
+    background-color: #000000;
+    border-radius: 100%;
+}
+
+.radio-items input[type=radio] {
     display: none;
 }
 
-.register-radio>label {
+.radio-items>label {
     font-size: 12px;
-    display: inline-block;
     cursor: pointer;
     position: relative;
-    padding-left: 29px;
-    margin-right: 0;
-    line-height: 18px;
-    user-select: none;
+    align-items: center;
+    display: flex;
 }
 
-.register-radio>label:before {
-    content: "";
+.radio-items input[type=radio]:checked+label>.radio-check>.radio-check-small {
     display: inline-block;
-    width: 17px;
-    height: 18px;
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    background: url('img/radio-none_active.png') center center no-repeat;
 }
 
-.register-radio input[type=radio]:checked+label:before {
-    background: url('img/radio-active.png') center center no-repeat;
-}
-
-.register-radio>label:not(:last-of-type) {
+.radio-items>label:not(:last-of-type) {
     margin-bottom: 16px;
 }
 
@@ -1170,4 +1204,61 @@ select {
     color: #4a4a4a;
     text-transform: uppercase;
     margin-top: 35px;
+}
+
+.information_for_register {
+    display: flex;
+    flex-direction: column;
+    padding-top: 39px;
+}
+
+.field-names {
+    font-size: 12px;
+    display: flex;
+    color: #222222;
+    margin-top: 23px;
+    margin-bottom: 13px;
+}
+
+.field-names>.dp-red {
+    font-size: 17px;
+    transform: translateY(-2px);
+    margin-left: 3px;
+}
+
+.register-input {
+    width: 390px;
+    height: 45px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+    padding-left: 10px;
+}
+
+.register-input:last-of-type {
+    margin-bottom: 20px;
+}
+
+.login {
+    font-family: Lato;
+    text-transform: uppercase;
+    padding: 16px 79px 15px 53px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-top: 22px;
+}
+
+.forgot_password {
+    font-family: Lato;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: none;
+    color: #222222;
+    margin-left: 30px;
+}
+
+.dp-red {
+    color: #ff0d0d;
 }

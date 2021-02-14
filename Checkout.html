@@ -56,36 +56,75 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="registration container">
         <div class="checkout-information">
-            <span>01.   Shipping Adress</span>
-            <form action="" class="register">
+            <input type="checkbox" id="chk-inf1">
 
-                <span class="register-high-text">Check as a guest or register</span>
-                <span class="register-small-text">Register with us for future convenience</span>
+            <label for="chk-inf1">
+                <span>01.   Shipping Adress</span>
+            </label>
 
-                <div class="register-radio">
-                    <input type="radio" name="registration-selection" id="regsel1">
-                    <label for="regsel1">checkout as guest</label>
-                    <input type="radio" name="registration-selection" id="regsel2">
-                    <label for="regsel2">register</label>
-                </div>
+            <div class="checkout-items">
+                <form action="" class="register">
 
-                <span class="register-high-text">register and save time!</span>
-                <span class="register-small-text">Register with us for future convenience</span>
+                    <span class="register-high-text">Check as a guest or register</span>
+                    <span class="register-small-text">Register with us for future convenience</span>
 
-                <div class="register-text">
-                    <span>&#187; Fast and easy checkout</span>
-                    <span>&#187; Easy access to your order history and status</span>
-                </div>
-                <button class="register-continue">Continue</button>
+                    <div class="register-radio">
 
-            </form>
-        </div>
+                        <div class="radio-items">
+                            <input type="radio" name="registration-selection" id="regsel1">
+                            <label for="regsel1">
+                                <div class="radio-check">
+                                <div class="radio-check-small"></div>
+                            </div>
+                            checkout as guest
+                        </label>
+                        </div>
 
-        <form action="" class="information_for_register">
+                        <div class="radio-items">
+                            <input type="radio" name="registration-selection" id="regsel2">
 
-        </form>
+                            <label for="regsel2">
+                                <div class="radio-check">
+                                    <div class="radio-check-small"></div>
+                                </div>register
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <span class="register-high-text">register and save time!</span>
+                    <span class="register-small-text">Register with us for future convenience</span>
+
+                    <div class="register-text">
+                        <span>&#187; Fast and easy checkout</span>
+                        <span>&#187; Easy access to your order history and status</span>
+                    </div>
+                    <button class="register-continue">Continue</button>
+
+                </form>
+
+                <form action="" class="information_for_register">
+                    <span class="register-high-text">Already registed?</span>
+                    <span class="register-small-text">Please log in below</span>
+                    <div class="field-names">EMAIL ADDRESS
+                        <div class="dp-red">*</div>
+                    </div>
+                    <input type="email" name="" id="" class="register-input">
+                    <div class="field-names">PASSWORD
+                        <div class="dp-red">*</div>
+                    </div>
+                    <input type="password" name="" id="" class="register-input">
+                    <span class="register-small-text dp-red">* Required Fileds</span>
+                    <div class="authorization">
+                        <button class="login">Log in</button>
+                        <a href="" class="forgot_password">Forgot Password ?</a>
+                    </div>
+
+                </form>
+            </div>
+
         </div>
 
         <div class="checkout-information">
