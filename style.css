@@ -1286,4 +1286,27 @@ label {
     font-size: 24px;
     background-color: #d8d8d8;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.women_collection-scroll-button:last-of-type {
+    transform: rotate(180deg);
+}
+
+.top-part-arrow {
+    height: 10.5px;
+    width: 10px;
+    border-right: solid 1px #ffffff;
+    transform: rotate(45deg);
+}
+
+.low-part-arrow {
+    height: 10.5px;
+    width: 10px;
+    border-right: solid 1px #ffffff;
+    transform: rotate(-45deg);
+    margin-top: 3.3px;
 }
