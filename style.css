@@ -15,7 +15,8 @@ button {
 }
 
 input,
-select {
+select,
+label {
     outline: none;
     cursor: pointer;
 }
@@ -1082,8 +1083,11 @@ select {
     font-weight: bold;
     text-transform: uppercase;
     color: #222222;
-    padding: 28px 0px 26px 0px;
     border-bottom: 1px solid #e8e8e8;
+}
+
+.checkout-information-name {
+    padding: 28px 0px 26px 0px;
 }
 
 .checkout-information>input[type=checkbox]+label {
@@ -1189,7 +1193,7 @@ select {
     margin-top: 15px;
 }
 
-.register-text>span {
+.register-text>p {
     margin-top: 15px;
 }
 
@@ -1215,9 +1219,9 @@ select {
 .field-names {
     font-size: 12px;
     display: flex;
+    flex-direction: column;
     color: #222222;
-    margin-top: 23px;
-    margin-bottom: 13px;
+    margin-top: 25px;
 }
 
 .field-names>.dp-red {
@@ -1226,16 +1230,21 @@ select {
     margin-left: 3px;
 }
 
+.field-names+.register-small-text {
+    margin-top: 20px;
+}
+
 .register-input {
     width: 390px;
     height: 45px;
     border: solid 1px #eaeaea;
     background-color: #ffffff;
     padding-left: 10px;
+    margin-top: 15px;
 }
 
-.register-input:last-of-type {
-    margin-bottom: 20px;
+.authorization {
+    padding-top: 26px;
 }
 
 .login {
@@ -1247,7 +1256,6 @@ select {
     font-size: 14px;
     font-weight: bold;
     color: #4a4a4a;
-    margin-top: 22px;
 }
 
 .forgot_password {
@@ -1261,4 +1269,21 @@ select {
 
 .dp-red {
     color: #ff0d0d;
+}
+
+.women_collection-scroll {
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px #eaeaea;
+}
+
+.women_collection-scroll-button {
+    width: 47px;
+    height: 47px;
+    font-family: "FontAwesome";
+    font-size: 24px;
+    background-color: #d8d8d8;
+    color: #ffffff;
 }
