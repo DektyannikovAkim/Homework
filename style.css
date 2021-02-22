@@ -1280,6 +1280,7 @@ label {
 }
 
 .women_collection-scroll-button {
+    position: relative;
     width: 47px;
     height: 47px;
     font-family: "FontAwesome";
@@ -1290,6 +1291,30 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.women_collection-scroll-button::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1px;
+    background-color: #ffffff;
+    top: 16px;
+    right: 18px;
+    bottom: 22px;
+    transform: rotate( 45deg);
+}
+
+.women_collection-scroll-button::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1px;
+    background-color: #ffffff;
+    top: 22px;
+    right: 18px;
+    bottom: 17px;
+    transform: rotate( -45deg);
 }
 
 .women_collection-scroll-button:last-of-type {
@@ -1309,4 +1334,197 @@ label {
     border-right: solid 1px #ffffff;
     transform: rotate(-45deg);
     margin-top: 3.3px;
+}
+
+.women_collection-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    transform: translateY(-46px);
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+}
+
+.women_collection-heading {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f16d7f;
+}
+
+.women_collection-info-scroll-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.women_collection-info-button {
+    width: 49px;
+    height: 1px;
+    background-color: #eaeaea;
+}
+
+.active-info-button {
+    height: 3px;
+    background-color: #ef5b70;
+}
+
+.women_collection-info-heading {
+    font-size: 18px;
+    font-weight: 900;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-bottom: 63px;
+}
+
+.women_collection-info-text {
+    max-width: 619px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #5e5e5e;
+    line-height: 1.71;
+    margin-bottom: 18px;
+}
+
+.items-general_info {
+    display: flex;
+    justify-content: space-between;
+    width: 334px;
+    margin-bottom: 34px;
+}
+
+.items-general_info>span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #b9b9b9;
+}
+
+.items-general_info>span>span {
+    color: #2f2f2f;
+}
+
+.women_collection-pay {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ef5b70;
+    margin-bottom: 40px;
+}
+
+.items-characteristics {
+    border-top: solid 1px #eaeaea;
+    padding: 60px 52px 122px 52px;
+}
+
+.items-characteristics-select {
+    display: flex;
+    flex-direction: column;
+    max-width: 144px;
+}
+
+.items-characteristics-select>label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2f2f2f;
+    margin-bottom: 15px;
+}
+
+.items-characteristics-select input[type=checkbox] {
+    display: none;
+}
+
+.select-characteristics {
+    position: relative;
+    width: 144px;
+    height: 35px;
+    padding-left: 14px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    color: #bcbcbc;
+    align-items: center;
+}
+
+.color-block {
+    width: 12px;
+    height: 12px;
+    background-color: #ef5b70;
+    margin-right: 11px;
+}
+
+.select-characteristics::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1px;
+    background-color: #bcbcbc;
+    top: 15px;
+    right: 9px;
+    bottom: 10px;
+    transform: rotate( 45deg);
+}
+
+.select-characteristics::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1px;
+    background-color: #bcbcbc;
+    top: 15px;
+    right: 14px;
+    bottom: 10px;
+    transform: rotate( -45deg);
+}
+
+.quanty-input {
+    width: 144px;
+    height: 35px;
+    padding: 12px 0px 13px 17px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #bcbcbc;
+}
+
+.items-characteristics-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.items-characteristics-add_to_cart {
+    width: 537px;
+    height: 55px;
+    border: solid 1px #ef5b70;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ef5b70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items-characteristics-add_to_cart>img {
+    margin-right: 15px;
+}
+
+.additional-offers {
+    padding-top: 69px;
+}
+
+.additional-offers-heading {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.items-text-for_additional-offers {
+    color: #6f6e6e;
 }
