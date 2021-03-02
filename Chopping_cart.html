@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <!--   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">-->
 
-    <title>WOMEN</title>
+    <title>Chopping Cart</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
     <nav class="menu">
         <a href="index.html" class="menu-list">Home</a>
         <a href="Product.html" class="menu-list">Man</a>
-        <a href="Chopping_cart.html" class="menu-list active-link">Women</a>
+        <a href="Checkout.html" class="menu-list active-link">Women</a>
         <a href="#" class="menu-list">Kids</a>
         <a href="#" class="menu-list">Accoseriese</a>
         <a href="#" class="menu-list">Featured</a>
@@ -57,95 +57,154 @@
     </section>
 
     <main>
-        <section class="registration container">
-            <div class="checkout-information">
-                <input type="checkbox" id="chk-inf1">
-
-                <label for="chk-inf1">
-                <p class="checkout-information-name">01.   Shipping Adress</p>
-            </label>
-
-                <div class="checkout-items">
-                    <form action="" class="register">
-
-                        <p class="register-high-text">Check as a guest or register</p>
-                        <p class="register-small-text">Register with us for future convenience</p>
-
-                        <div class="register-radio">
-
-                            <div class="radio-items">
-                                <input type="radio" name="registration-selection" id="regsel1">
-                                <label for="regsel1">
-                                <div class="radio-check">
-                                <div class="radio-check-small"></div>
-                            </div>
-                            checkout as guest
-                        </label>
-                            </div>
-
-                            <div class="radio-items">
-                                <input type="radio" name="registration-selection" id="regsel2">
-
-                                <label for="regsel2">
-                                <div class="radio-check">
-                                    <div class="radio-check-small"></div>
-                                </div>register
-                            </label>
-                            </div>
-
+        <section class="product_details container">
+            <div class="product_details-row">
+                <div class="product_details-items">
+                    <span class="product_details-columns-headers">Product Details</span>
+                </div>
+                <div class="product_details-items">
+                    <span class="product_details-columns-headers">unite Price</span>
+                </div>
+                <div class="product_details-items">
+                    <span class="product_details-columns-headers">Quantity</span>
+                </div>
+                <div class="product_details-items">
+                    <span class="product_details-columns-headers">shipping</span>
+                </div>
+                <div class="product_details-items">
+                    <span class="product_details-columns-headers">Subtotal</span>
+                </div>
+                <div class="product_details-items">
+                    <span class="product_details-columns-headers">ACTION</span>
+                </div>
+            </div>
+            <div class="product_details-row">
+                <div class="product_details-items">
+                    <div class="product_details-card">
+                        <img src="img/details-card_1.png" alt="details-card_1">
+                        <div class="product_details-card-info">
+                            <span class="product_details-card-info-header">Mango  People  T-shirt</span>
+                            <span class="product_details-card-info-text">Color:<span> Red</span></span>
+                            <span class="product_details-card-info-text"> Size:<span> Xll</span></span>
                         </div>
+                    </div>
+                </div>
+                <div class="product_details-items">
+                    <span>$150</span>
+                </div>
+                <div class="product_details-items">
+                    <input type="text" value="2">
+                </div>
+                <div class="product_details-items">
+                    <span>FREE</span>
+                </div>
+                <div class="product_details-items">
+                    <span>$300</span>
+                </div>
+                <div class="product_details-items">
+                    <div class="product_details-items-circle"></div>
+                </div>
+            </div>
 
-                        <p class="register-high-text">register and save time!</p>
-                        <p class="register-small-text">Register with us for future convenience</p>
-
-                        <div class="register-text">
-                            <p>&#187; Fast and easy checkout</p>
-                            <p>&#187; Easy access to your order history and status</p>
+            <div class="product_details-row">
+                <div class="product_details-items">
+                    <div class="product_details-card">
+                        <img src="img/details-card_2.png" alt="details-card_2">
+                        <div class="product_details-card-info">
+                            <span class="product_details-card-info-header">Mango  People  T-shirt</span>
+                            <span class="product_details-card-info-text">Color:<span> Red</span></span>
+                            <span class="product_details-card-info-text"> Size:<span> Xll</span></span>
                         </div>
-                        <button class="register-continue">Continue</button>
+                    </div>
+                </div>
+                <div class="product_details-items">
+                    <span>$150</span>
+                </div>
+                <div class="product_details-items">
+                    <input type="text" value="2">
+                </div>
+                <div class="product_details-items">
+                    <span>FREE</span>
+                </div>
+                <div class="product_details-items">
+                    <span>$300</span>
+                </div>
+                <div class="product_details-items">
+                    <div class="product_details-items-circle"></div>
+                </div>
+            </div>
 
-                    </form>
-
-                    <form action="" class="information_for_register">
-                        <p class="register-high-text">Already registed?</p>
-                        <p class="register-small-text">Please log in below</p>
-                        <div class="field-names">
-                            <label for="eml"> EMAIL ADDRESS<span class="dp-red"> *</span></label>
-
-                            <input type="email" name="" id="eml" class="register-input">
+            <div class="product_details-row">
+                <div class="product_details-items">
+                    <div class="product_details-card">
+                        <img src="img/details-card_3.png" alt="details-card_3">
+                        <div class="product_details-card-info">
+                            <span class="product_details-card-info-header">Mango  People  T-shirt</span>
+                            <span class="product_details-card-info-text">Color:<span> Red</span></span>
+                            <span class="product_details-card-info-text"> Size:<span> Xll</span></span>
                         </div>
+                    </div>
+                </div>
+                <div class="product_details-items">
+                    <span>$150</span>
+                </div>
+                <div class="product_details-items">
+                    <input type="text" value="2">
+                </div>
+                <div class="product_details-items">
+                    <span>FREE</span>
+                </div>
+                <div class="product_details-items">
+                    <span>$300</span>
+                </div>
+                <div class="product_details-items">
+                    <div class="product_details-items-circle"></div>
+                </div>
+            </div>
 
-                        <div class="field-names">
-                            <label for="pswrd">PASSWORD<span class="dp-red"> *</span></label>
-                            <input type="password" name="" id="pswrd" class="register-input">
-                        </div>
+            <div class="product_details-buttons_container">
+                <button class="product_details-button clear_cart">cLEAR SHOPPING CART</button>
+                <button class="product_details-button continue_shp">cONTINUE sHOPPING</button>
+            </div>
 
-                        <p class="register-small-text dp-red">* Required Fileds</p>
-                        <div class="authorization">
-                            <button class="login">Log in</button>
-                            <a href="" class="forgot_password">Forgot Password ?</a>
-                        </div>
+        </section>
 
-                    </form>
+        <section class="ordering container">
+            <form action="" class="shipping_adress">
+                <h3 class="ordering-heading">Shipping Adress</h3>
+
+                <div class="country-select">
+                    <input type="checkbox" name="" id="cntry-slct">
+                    <label for="cntry-slct">Bangladesh
+                    </label>
+                    <div class="country">
+                        USA
+                    </div>
                 </div>
 
-            </div>
+                <input type="text" name="" id="" placeholder="State" class="adress_input">
+                <input type="text" name="" id="" placeholder="Postcode / Zip" class="adress_input">
+                <button class="ordering-button get_qte">get a quote</button>
+            </form>
 
-            <div class="checkout-information">
-                <p class="checkout-information-name">02. BILLING INFORMATION</p>
-            </div>
-            <div class="checkout-information">
-                <p class="checkout-information-name">03. SHIPPING INFORMATION</p>
-            </div>
-            <div class="checkout-information">
-                <p class="checkout-information-name">04. SHIPPING METHOD</p>
-            </div>
-            <div class="checkout-information">
-                <p class="checkout-information-name">05. PAYMENT METHOD</p>
-            </div>
-            <div class="checkout-information">
-                <p class="checkout-information-name">06. ORDER REVIEW</p>
-            </div>
+            <form action="" class="coupon_discount">
+                <h3 class="ordering-heading">coupon discount</h3>
+                <label for="ste">Enter your coupon code if you have one</label>
+
+                <input type="text" name="" id="ste" placeholder="State" class="adress_input">
+
+                <button class="ordering-button apply_cpn">Apply coupon</button>
+            </form>
+
+            <form action="" class="proceed_to_chckt">
+
+                <div class="proceed_to_chckt-price">
+                    <span>Sub total<span>$900</span></span>
+                    <h3 class="ordering-heading">GRAND TOTAL<span>$900</span></h3>
+                </div>
+
+                <button class="proceed_to_chckt-btn">proceed to checkout</button>
+            </form>
 
         </section>
 
@@ -176,6 +235,7 @@
             </div>
         </div>
     </section>
+
 
 
     <footer>
