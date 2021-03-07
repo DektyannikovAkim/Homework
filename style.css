@@ -290,16 +290,35 @@ label {
 .buy-item {
     padding: 10px 13px 7px 12px;
     border: solid 1px #ffffff;
+    border-radius: 2px;
     font-size: 13px;
     font-weight: bold;
     color: #ffffff;
     background-color: transparent;
     display: flex;
     align-items: center;
+    margin-bottom: 8px;
 }
 
 .buy-item>img {
     margin-right: 8px;
+}
+
+.additional-btn {
+    width: 128px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-btn-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 57px;
+    height: 40px;
+    border-radius: 2px;
+    border: solid 1px #ffffff;
+    background-color: transparent;
 }
 
 .scroll-items {
@@ -1721,6 +1740,16 @@ label {
 
 .country {
     display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    margin-top: 1px;
+    padding: 16px 0px 16px 18px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    color: #b1b1b1;
 }
 
 .country-select input[type=checkbox]:checked+label::before {
@@ -1739,14 +1768,6 @@ label {
 
 .country-select input[type=checkbox]:checked+label+.country {
     display: inline-block;
-    top: 45px;
-    padding: 16px 0px 16px 18px;
-    margin-top: 5px;
-    border-top: solid 1px #eaeaea;
-    font-size: 13px;
-    font-weight: 300;
-    color: #b1b1b1;
-    z-index: 9999;
 }
 
 .adress_input {
