@@ -120,13 +120,7 @@ label {
     text-transform: uppercase;
     padding-top: 19px;
     padding-bottom: 22px;
-}
-
-.menu-list:not(:last-of-type) {
     padding-right: 22.5px;
-}
-
-.menu-list:not(:first-of-type) {
     padding-left: 22.5px;
 }
 
@@ -232,7 +226,7 @@ label {
     font-size: 14px;
     color: #9f9f9f;
     display: inline-block;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .items-container {
@@ -590,6 +584,10 @@ label {
     text-decoration: none;
 }
 
+.nav-info>a:hover {
+    color: #424141;
+}
+
 .nav-info>a:not(:last-child) {
     margin-bottom: 24px;
 }
@@ -626,33 +624,43 @@ label {
 }
 
 .fs {
-    background: url('img/facebook.png') no-repeat;
+    background: url('img/facebook.png') no-repeat #ffffff;
     background-position: center center;
-    background-color: #ffffff;
 }
 
 .tw {
-    background: url('img/twitter.png') no-repeat;
+    background: url('img/twitter.png') no-repeat #ffffff;
     background-position: center center;
-    background-color: #f16d7f;
 }
 
 .in {
-    background: url('img/in.png') no-repeat;
+    background: url('img/in.png') no-repeat #ffffff;
     background-position: center center;
-    background-color: #eeeeee;
 }
 
 .pntrs {
-    background: url('img/pinterest.png') no-repeat;
+    background: url('img/pinterest.png') no-repeat #ffffff;
     background-position: center center;
-    background-color: #ffffff;
 }
 
 .gl {
-    background: url('img/google.png') no-repeat;
+    background: url('img/google.png') no-repeat #ffffff;
     background-position: center center;
-    background-color: #ffffff;
+}
+
+.link-active {
+    background-color: #f16d7f;
+}
+
+.link-deactive {
+    background-color: #eeeeee;
+}
+
+.fs:hover,
+.tw:hover,
+.pntrs:hover,
+.gl:hover {
+    background-color: #f16d7f;
 }
 
 .new-arrivals {
@@ -1555,7 +1563,7 @@ label {
 
 .product_details-row {
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 380px repeat(5, 80px);
     grid-column-gap: 72px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -1844,8 +1852,8 @@ label {
 }
 
 .proceed_to_chckt {
-    height: 214px;
     display: flex;
+    align-self: flex-start;
     flex-direction: column;
     padding: 40px 43px 42px 44px;
     background-color: #f5f3f3;
